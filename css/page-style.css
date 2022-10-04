@@ -168,23 +168,32 @@ header {
 }
 
 
-.body-container {
+.page__container {
     margin-top: 1.5em;
     padding: 1em 10%;
-    font-size: 2em;
     width: 80%;
     /* text-align: center; */
     color:#edf0ed;
 }
 
 .body p {
-    font-size: 1em;
+    font-size: var(--fs-body);
 }
 
 .quote {
     font-family: "Prata", serif;
     margin-right: auto;
     font-weight: 200;
-    font-size: .8em;
+    font-size: var(--fs-h2);
     color: #edf0ed;
 }
+
+.box__section {
+    width:100%;
+    padding: 2em 2em;
+    border: 5px solid white;
+    background-color: white;
+    margin: 0; 
+    color: #24252a;
+}
+
