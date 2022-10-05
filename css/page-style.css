@@ -11,7 +11,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;https://github.com/kobotabby/EwasteEverywhere/blob/main/css/page-style.css
 }
 
 * {
@@ -313,9 +313,12 @@ header {
 }
 
 
-.steps__list::marker {
-  size: var(--fs-h2);
+li::marker {
+  font-size: var(--fs-h2);
 }
+
+
+
 
 .steps__list p{
   font-size: var(--fs-body);
