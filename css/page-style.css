@@ -5,7 +5,8 @@
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
+        --fs-h4: 2.5rem;
+        --fs-body: 1.6rem;
     }
 }
 
@@ -20,7 +21,7 @@ html {
 
 
 body {
-  background-color: #24252a;
+  background-color: #edf0ed;
   margin: 0 auto;
 }
 
@@ -99,11 +100,11 @@ header {
   position: relative;
   text-align: left;
   padding: 1em 10%;
-  padding-top: 25vh;
+  padding-top: 2em;
   font-family: "Prata", serif;
   margin-right: auto;
   font-weight: 400;
-  font-size: 3vh;
+  font-size: 3em;
   color: #edf0ed;
   cursor: pointer;
 }
@@ -114,7 +115,7 @@ header {
         
         position: relative;
         display: block;
-        height: 60vh;
+        height: 40vh;
         width: calc(100% + 1.5em);
         max-width: 100%;
       }
@@ -124,7 +125,7 @@ header {
 
 .intro-container strong {
 /*   color: rgb(11, 218, 81); */
-  text-shadow: 1px 1px black;
+  /* text-shadow: 2px 2px black; */
 }
 
 
@@ -169,31 +170,159 @@ header {
 
 
 .page__container {
+    position: relative;
     margin-top: 1.5em;
     padding: 1em 10%;
     width: 80%;
     /* text-align: center; */
-    color:#edf0ed;
 }
 
-.body p {
-    font-size: var(--fs-body);
+
+
+.box__section {
+    margin-bottom: 1em;
+    width:100%;
+    padding: 2em 2em;
+    border: 2px solid white;
+    background-color: white;
+    margin: 0; 
+    color: #24252a;
+    border-radius: 25px;    
 }
+
+.box__section img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.box__section h2 {
+  font-size: var(--fs-h2);s
+}
+
+.box__section p {
+  font-size: 2em;
+  color: #24252a;
+}
+
+#environment {
+  /* display: flex; */
+  background: linear-gradient(
+    rgba(	0, 0, 0,0.5), rgba(0, 0, 0,0.7)
+  ), url(https://www.ewaste1.com/wp-content/uploads/2018/07/E-waste-and-the-environment.jpeg);
+  background-size: cover;
+  color:#edf0ed;
+  min-height: 30em;
+}
+
+#environment-text {
+  color:#edf0ed;
+}
+
+#workers {
+  display: flex;
+  background: linear-gradient(
+    rgba(0,0,0,0.5), rgba(0,0,0,0.7)
+  ), url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.vocativ.com%2Fphotos%2F2015%2F01%2FIndia-E-Waste-051572272859.jpg&f=1&nofb=1&ipt=71dca01cf06d23b4e197b3452e8f74ceef3cedf71f23d63e9a3db60960c9b6af&ipo=images);
+  background-size: cover;
+  color:#edf0ed;
+  min-height: 30em;
+}
+
+#workers-quote {
+  color:#edf0ed;
+}
+
+#workers-text {
+  color:#edf0ed;
+}
+
+#children {
+  background: linear-gradient(
+    rgba(0,0,0,0.5), rgba(0,0,0,0.7)
+  ), url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--rH4Jupn9--%2Fc_fill%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600%2F17m7qb73a308ipng.png&f=1&nofb=1&ipt=a96c2b7aa2a04ea5f22c1cbe2095c0a6bc095601b216b8e9594cabd31690e98a&ipo=images);
+  background-size: cover;
+  color: #edf0ed;
+}
+
+#children-text {
+  color:#edf0ed;
+}
+
 
 .quote {
     font-family: "Prata", serif;
     margin-right: auto;
     font-weight: 200;
-    font-size: var(--fs-h2);
+    font-size: var(--fs-body);
     color: #edf0ed;
 }
 
-.box__section {
-    width:100%;
-    padding: 2em 2em;
-    border: 5px solid white;
-    background-color: white;
-    margin: 0; 
-    color: #24252a;
+.chemical__list li{
+  list-style: none;
+  
+}
+
+.chemical__list {
+  font-family: "Prata", serif;
+  background: black;
+  color:#edf0ed;
+}
+
+.chemical__list h3 {
+  font-size: 3em;
+}
+
+.chemical__list h4{
+  font-size: 2em;
+  margin: 0;
+  color:#edf0ed;
+  margin-top: 1em;
+
+  
+}
+
+.chemical__container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: baseline;
+  background: #24252a;
+  margin: 0;
+}
+
+.chemical__container p{
+  color: white;
+  margin: 1em;
+  padding: 1em 1em;
+  background: rgb(11, 218, 81);
+  border-radius: 25px;
+  font-size: 1.2em;
+  
+}
+
+
+.horizontal-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.steps__list {
+  font-size: var(--fs-h3);
+}
+
+
+.steps__list::marker {
+  size: var(--fs-h2);
+}
+
+.steps__list p{
+  font-size: var(--fs-body);
+}
+
+
+#step {
+  margin-bottom: 1em;
 }
 
