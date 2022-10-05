@@ -39,7 +39,6 @@ header {
     
   }
   
-
 .logo {
     font-family: "Prata", serif;
     margin-right: auto;
@@ -100,17 +99,18 @@ header {
   text-align: left;
   padding: 1em 10%;
   padding-top: 25vh;
-/*   padding-bottom: 4em; */
   font-family: "Prata", serif;
   margin-right: auto;
   font-weight: 400;
   font-size: 3vh;
   color: #edf0ed;
   cursor: pointer;
+  
 }
 
+
+
 .intro-container strong {
-/*   color: rgb(11, 218, 81); */
   text-shadow: 1px 1px black;
 }
 
@@ -139,7 +139,7 @@ header {
     margin-right: auto;
     font-weight: 200;
     font-size: .7em;
-    color: #edf0ed;
+    color: white;
 }
 
 .block-parent-element {
@@ -157,9 +157,6 @@ header {
 }
 
 
-.block-child-element1 {
-    font-size: 3vh;
-}
 
 .block-child-element2 {
     width: 60%;

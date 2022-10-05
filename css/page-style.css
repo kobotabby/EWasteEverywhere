@@ -95,6 +95,8 @@ header {
   max-width: 100%;
 }
 
+
+
 .intro-container {
   transform: scaleX(-1);
   position: relative;
@@ -110,16 +112,38 @@ header {
 }
 
 
+
+#solutions-intro {
+  background: linear-gradient(
+    rgba(0,0,0,0.5), rgba(0,0,0,0.7)
+  ),
+    url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.greenteksolutionsllc.com%2Fimg%2Fe-waste-recycling.jpg&f=1&nofb=1&ipt=37e1d1a5732cff458c191f461f18fd7639d68c46f5de7ea553b46ca67f257b03&ipo=images);
+    height: 60em;
+    background-size: cover;
+}
+
+
+
 @media (min-width: 2000px) {
     .intro {
-        
         position: relative;
         display: block;
         height: 40vh;
         width: calc(100% + 1.5em);
         max-width: 100%;
       }
+      
+      #solutions-intro {
+        background: linear-gradient(
+          rgba(0,0,0,0.5), rgba(0,0,0,0.7)
+        ),
+          url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.greenteksolutionsllc.com%2Fimg%2Fe-waste-recycling.jpg&f=1&nofb=1&ipt=37e1d1a5732cff458c191f461f18fd7639d68c46f5de7ea553b46ca67f257b03&ipo=images);
+          height: 130vh;
+          background-size: cover;
+      }
+      
 }
+
 
 
 
@@ -196,7 +220,7 @@ header {
 }
 
 .box__section h2 {
-  font-size: var(--fs-h2);s
+  font-size: var(--fs-h2);
 }
 
 .box__section p {
@@ -210,12 +234,12 @@ header {
     rgba(	0, 0, 0,0.5), rgba(0, 0, 0,0.7)
   ), url(https://www.ewaste1.com/wp-content/uploads/2018/07/E-waste-and-the-environment.jpeg);
   background-size: cover;
-  color:#edf0ed;
+  color: white;
   min-height: 30em;
 }
 
 #environment-text {
-  color:#edf0ed;
+  color: white;
 }
 
 #workers {
@@ -224,16 +248,16 @@ header {
     rgba(0,0,0,0.5), rgba(0,0,0,0.7)
   ), url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.vocativ.com%2Fphotos%2F2015%2F01%2FIndia-E-Waste-051572272859.jpg&f=1&nofb=1&ipt=71dca01cf06d23b4e197b3452e8f74ceef3cedf71f23d63e9a3db60960c9b6af&ipo=images);
   background-size: cover;
-  color:#edf0ed;
+  color: white;
   min-height: 30em;
 }
 
 #workers-quote {
-  color:#edf0ed;
+  color: white;
 }
 
 #workers-text {
-  color:#edf0ed;
+  color: white;
 }
 
 #children {
@@ -241,11 +265,11 @@ header {
     rgba(0,0,0,0.5), rgba(0,0,0,0.7)
   ), url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--rH4Jupn9--%2Fc_fill%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600%2F17m7qb73a308ipng.png&f=1&nofb=1&ipt=a96c2b7aa2a04ea5f22c1cbe2095c0a6bc095601b216b8e9594cabd31690e98a&ipo=images);
   background-size: cover;
-  color: #edf0ed;
+  color: white;
 }
 
 #children-text {
-  color:#edf0ed;
+  color: white;
 }
 
 
@@ -254,7 +278,7 @@ header {
     margin-right: auto;
     font-weight: 200;
     font-size: var(--fs-body);
-    color: #edf0ed;
+    color: white;
 }
 
 .chemical__list li{
@@ -315,9 +339,12 @@ header {
 
 li::marker {
   font-size: var(--fs-h2);
+  color: white;
 }
 
-
+.no-marker-list {
+  list-style: none;
+}
 
 
 .steps__list p{
@@ -329,3 +356,17 @@ li::marker {
   margin-bottom: 1em;
 }
 
+
+.link {
+  font-family: "Prata", serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #24252a;
+  text-decoration: none;
+  transition: all 0.3 ease 0s;
+
+}
+
+.link:hover {
+    color: rgb(11, 218, 81);
+}
