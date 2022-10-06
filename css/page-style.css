@@ -37,10 +37,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 10000;
-    
   }
   
-
 .logo {
     font-family: "Prata", serif;
     margin-right: auto;
@@ -78,24 +76,19 @@ header {
 
 
 /* home */
-
 .intro {
-    background: linear-gradient(
-        rgba(0,0,0,0.5), rgba(0,0,0,0.7)
-      ),
-        url(https://greatforest.com/wp-content/uploads/2015/09/Agbogbloshie_Ghana_girls-in-wheelbarrow.jpg);
-    transform: scaleX(-1);
-    background-size: cover;
-   
-
+  background: linear-gradient(
+      rgba(0,0,0,0.5), rgba(0,0,0,0.7)
+    ),
+      url(https://greatforest.com/wp-content/uploads/2015/09/Agbogbloshie_Ghana_girls-in-wheelbarrow.jpg);
+  transform: scaleX(-1);
+  background-size: cover;
   position: relative;
   display: block;
   height: 100vh;
   width: calc(100% + 1.5em);
   max-width: 100%;
 }
-
-
 
 .intro-container {
   transform: scaleX(-1);
@@ -122,8 +115,6 @@ header {
     background-size: cover;
 }
 
-
-
 @media (min-width: 2000px) {
     .intro {
         position: relative;
@@ -140,21 +131,11 @@ header {
           url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.greenteksolutionsllc.com%2Fimg%2Fe-waste-recycling.jpg&f=1&nofb=1&ipt=37e1d1a5732cff458c191f461f18fd7639d68c46f5de7ea553b46ca67f257b03&ipo=images);
           height: 130vh;
           background-size: cover;
-      }
-      
-}
-
-
-
-
-.intro-container strong {
-/*   color: rgb(11, 218, 81); */
-  /* text-shadow: 2px 2px black; */
+      }   
 }
 
 
 .intro__description {
-    /* transform: scaleX(-1); */
     font-family: "Prata", serif;
     margin-right: auto;
     font-weight: 200;
@@ -163,45 +144,28 @@ header {
 }
 
 .block-parent-element {
-    /* border: 1px solid black; */
     margin: 1rem;
     padding: 2rem 0rem;
     text-align: left;
 }
 .block-child-element {
-    /* border: 1px solid red; */
     display: inline-block;
-
     padding: 1rem 1rem;
     vertical-align: top;
     width: 30%;
-}
-
-
-.block-child-element1 {
-    font-size: 3vh;
-}
-
-.block-child-element2 {
     width: 60%;
 }
 
 .vertical {
-    /* margin-top: 1.2em; */
     border-left: 5px solid rgb(11, 218, 81);
-    /* height: 200px; */
 }
-
 
 .page__container {
     position: relative;
     margin-top: 1.5em;
     padding: 1em 10%;
     width: 80%;
-    /* text-align: center; */
 }
-
-
 
 .box__section {
     margin-bottom: 1em;
@@ -228,8 +192,8 @@ header {
   color: #24252a;
 }
 
+/* I used ids here because it overrides the encapsulating section formatting */
 #environment {
-  /* display: flex; */
   background: linear-gradient(
     rgba(	0, 0, 0,0.5), rgba(0, 0, 0,0.7)
   ), url(https://www.ewaste1.com/wp-content/uploads/2018/07/E-waste-and-the-environment.jpeg);
@@ -260,7 +224,7 @@ header {
   color: white;
 }
 
-#children {
+.children {
   background: linear-gradient(
     rgba(0,0,0,0.5), rgba(0,0,0,0.7)
   ), url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.kinja-img.com%2Fgawker-media%2Fimage%2Fupload%2Fs--rH4Jupn9--%2Fc_fill%2Cfl_progressive%2Cg_center%2Ch_900%2Cq_80%2Cw_1600%2F17m7qb73a308ipng.png&f=1&nofb=1&ipt=a96c2b7aa2a04ea5f22c1cbe2095c0a6bc095601b216b8e9594cabd31690e98a&ipo=images);
@@ -268,8 +232,9 @@ header {
   color: white;
 }
 
-#children-text {
-  color: white;
+.children-text {
+  color: white !important;
+  
 }
 
 
@@ -281,10 +246,7 @@ header {
     color: white;
 }
 
-.chemical__list li{
-  list-style: none;
-  
-}
+
 
 .chemical__list {
   font-family: "Prata", serif;
@@ -321,7 +283,6 @@ header {
   background: rgb(11, 218, 81);
   border-radius: 25px;
   font-size: 1.2em;
-  
 }
 
 
@@ -329,8 +290,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-
-
 
 .steps__list {
   font-size: var(--fs-h3);
@@ -346,16 +305,13 @@ li::marker {
   list-style: none;
 }
 
-
 .steps__list p{
   font-size: var(--fs-body);
 }
 
-
-#step {
+.step {
   margin-bottom: 1em;
 }
-
 
 .link {
   font-family: "Prata", serif;
@@ -364,7 +320,6 @@ li::marker {
   color: #24252a;
   text-decoration: none;
   transition: all 0.3 ease 0s;
-
 }
 
 .link:hover {

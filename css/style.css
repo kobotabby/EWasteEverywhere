@@ -26,7 +26,6 @@ body {
 
 
 /* nav bar */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -76,7 +75,6 @@ header {
 
 
 /* home */
-
 .intro {
   background: linear-gradient(
     rgba(0,0,0,0.5), rgba(0,0,0,0.7)
@@ -131,10 +129,7 @@ header {
   border: 2px solid black;
 }
 
-
-/* move to second page */
 .intro__description {
-    /* transform: scaleX(-1); */
     font-family: "Prata", serif;
     margin-right: auto;
     font-weight: 200;
@@ -143,33 +138,23 @@ header {
 }
 
 .block-parent-element {
-    /* border: 1px solid black; */
     margin: 1rem;
     padding: 2rem 0rem;
     text-align: left;
 }
 .block-child-element {
     display: inline-block;
-    /* border: 1px solid red; */
     padding: 1rem 1rem;
     vertical-align: top;
-    width: 30%;
-}
-
-
-
-.block-child-element2 {
     width: 60%;
 }
 
 .vertical {
     border-left: 5px solid rgb(11, 218, 81);
-    /* height: 200px; */
 }
 
 
 .box__section {
-
   width:100%;
   padding: 2em 2em;
   word-wrap: break-word;
