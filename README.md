@@ -1,2 +1,2 @@
 # EwasteEverywhere
-A website made for ICS3UE
+Environmental awareness website.
